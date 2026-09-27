@@ -1,0 +1,21 @@
+# macOS
+.DS_Store
+
+# KiCad: backups, autosaves, locks, caches and per-user view state
+*-backups/
+_autosave-*
+\#auto_saved_files\#
+*.lck
+fp-info-cache
+*.kicad_prl
+*.bak
+*-bak
+
+# Firmware build output
+.pio/
+build/
+.esphome/
+
+# Secrets (Wi-Fi credentials, API keys)
+secrets.yaml
+.env

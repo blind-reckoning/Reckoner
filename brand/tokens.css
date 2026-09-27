@@ -1,0 +1,90 @@
+/* Blind Reckoning brand tokens, generated from tokens.json. Use var(--token-name); never hard-code values. */
+
+@font-face { font-family: "Young Serif"; src: url("fonts/YoungSerif-Regular.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: "IBM Plex Sans"; src: url("fonts/IBMPlexSans-400.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: "IBM Plex Sans"; src: url("fonts/IBMPlexSans-500.woff2") format("woff2"); font-weight: 500; font-style: normal; font-display: swap; }
+@font-face { font-family: "IBM Plex Sans"; src: url("fonts/IBMPlexSans-600.woff2") format("woff2"); font-weight: 600; font-style: normal; font-display: swap; }
+@font-face { font-family: "IBM Plex Mono"; src: url("fonts/IBMPlexMono-400.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: "IBM Plex Mono"; src: url("fonts/IBMPlexMono-500.woff2") format("woff2"); font-weight: 500; font-style: normal; font-display: swap; }
+
+/* Chart: the default (light) theme */
+:root, [data-theme="chart"] {
+  color-scheme: light;
+  --chart: #f4efe4;
+  --chart-raised: #fbf8f1;
+  --rule: #d6ccb8;
+  --ink: #13233a;
+  --ink-muted: #566173;
+  --deep: #13233a;
+  --on-deep: #f4efe4;
+  --brass: #a87a22;
+  --on-brass: #0a1422;
+  --brass-text: #7a5410;
+  --brass-soft: #eee0c0;
+  --sea: #2d5b79;
+  --course: #b03a26;
+  --shadow-sm: 0 1px 2px #13233a14;
+  --focus-ring: 0 0 0 2px #f4efe4, 0 0 0 4px #2d5b79;
+}
+
+/* Night watch: the dark theme, chosen explicitly or by the system setting */
+[data-theme="night-watch"] {
+  color-scheme: dark;
+  --chart: #0e1a2b;
+  --chart-raised: #16253a;
+  --rule: #2b3c55;
+  --ink: #ece6d8;
+  --ink-muted: #a3adbd;
+  --deep: #264a75;
+  --on-deep: #ece6d8;
+  --brass: #d8a445;
+  --on-brass: #0a1422;
+  --brass-text: #e2b865;
+  --brass-soft: #3a2e16;
+  --sea: #80b2d1;
+  --course: #f07c62;
+  --shadow-sm: 0 1px 3px #000000a6;
+  --focus-ring: 0 0 0 2px #0e1a2b, 0 0 0 4px #80b2d1;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="chart"]) {
+    color-scheme: dark;
+    --chart: #0e1a2b;
+    --chart-raised: #16253a;
+    --rule: #2b3c55;
+    --ink: #ece6d8;
+    --ink-muted: #a3adbd;
+    --deep: #264a75;
+    --on-deep: #ece6d8;
+    --brass: #d8a445;
+    --on-brass: #0a1422;
+    --brass-text: #e2b865;
+    --brass-soft: #3a2e16;
+    --sea: #80b2d1;
+    --course: #f07c62;
+    --shadow-sm: 0 1px 3px #000000a6;
+    --focus-ring: 0 0 0 2px #0e1a2b, 0 0 0 4px #80b2d1;
+  }
+}
+
+:root {
+  --font-display: "Young Serif", Georgia, serif;
+  --font-sans: "IBM Plex Sans", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-4: 16px;
+  --space-6: 24px;
+  --space-10: 40px;
+  --radius-sm: 2px;
+  --radius-md: 6px;
+  --radius-full: 9999px;
+}
+
+/* Type styles */
+.type-display { font-family: var(--font-display); font-size: 40px; line-height: 44px; font-weight: 400; letter-spacing: -0.01em; }
+.type-heading { font-family: var(--font-sans); font-size: 20px; line-height: 28px; font-weight: 600; }
+.type-body { font-family: var(--font-sans); font-size: 16px; line-height: 24px; font-weight: 400; }
+.type-label { font-family: var(--font-sans); font-size: 12px; line-height: 16px; font-weight: 500; letter-spacing: 0.04em; text-transform: uppercase; }
+.type-reading { font-family: var(--font-mono); font-size: 28px; line-height: 32px; font-weight: 500; }
+.type-code { font-family: var(--font-mono); font-size: 13px; line-height: 20px; font-weight: 400; }
