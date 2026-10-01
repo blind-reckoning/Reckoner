@@ -1,6 +1,9 @@
 # macOS
 .DS_Store
 
+# Editors
+.obsidian/
+
 # KiCad: backups, autosaves, locks, caches and per-user view state
 *-backups/
 _autosave-*
@@ -10,6 +13,7 @@ fp-info-cache
 *.kicad_prl
 *.bak
 *-bak
+.history/
 
 # Firmware build output
 .pio/
@@ -19,3 +23,11 @@ build/
 # Secrets (Wi-Fi credentials, API keys)
 secrets.yaml
 .env
+
+# Private working notes (owner's decision): never tracked.
+private/
+
+# Markdown stays local, except the root README and the brand book.
+*.md
+!/README.md
+!/brand/**/*.md
