@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" width="1200" height="300" role="img" aria-label="Danger: 230 VAC mains. This board is not isolated: every part of it is live when powered, and contact can kill.">
+  <title>Danger: 230 VAC mains, not isolated</title>
+  <defs>
+    <pattern id="hazard" width="48" height="48" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="24" height="48" fill="#f2b705"/>
+      <rect x="24" width="24" height="48" fill="#111111"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="300" rx="14" fill="#111111"/>
+  <rect x="0" y="0" width="1200" height="300" rx="14" fill="url(#hazard)"/>
+  <rect x="22" y="22" width="1156" height="256" rx="8" fill="#b03a26"/>
+  <rect x="22" y="22" width="1156" height="256" rx="8" fill="none" stroke="#111111" stroke-width="4"/>
+
+  <!-- ISO 7010 W012 style electricity warning sign -->
+  <g transform="translate(160 158)">
+    <path d="M0 -112 L118 92 L-118 92 Z" fill="#111111" stroke="#111111" stroke-width="22" stroke-linejoin="round"/>
+    <path d="M0 -84 L94 78 L-94 78 Z" fill="#f2b705" stroke="#f2b705" stroke-width="10" stroke-linejoin="round"/>
+    <path d="M14 -50 L-30 14 L-4 14 L-22 66 L-34 58 L-28 92 L4 70 L-8 66 L32 -2 L6 -2 L26 -50 Z" fill="#111111"/>
+  </g>
+
+  <g font-family="Helvetica Neue, Helvetica, Arial, sans-serif" fill="#ffffff">
+    <text x="318" y="122" font-size="92" font-weight="800" letter-spacing="6">DANGER</text>
+    <text x="320" y="178" font-size="40" font-weight="700" letter-spacing="1.5">230 VAC MAINS · NOT ISOLATED</text>
+    <text x="321" y="222" font-size="23" font-weight="500">Every part of this board is live when it is powered,</text>
+    <text x="321" y="252" font-size="23" font-weight="500">including the ESP32, the LED and the test pads. Contact can kill.</text>
+  </g>
+</svg>

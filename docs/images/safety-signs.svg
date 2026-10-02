@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 380" width="1200" height="380" role="img" aria-label="Three safety rules: lethal voltage, every node is live; never connect USB, probes or tools while it is connected to mains; isolate at the breaker and prove it dead first.">
+  <title>Safety rules for the Reckoner</title>
+  <rect width="1200" height="380" rx="14" fill="#fbf8f1" stroke="#d6ccb8" stroke-width="2"/>
+
+  <!-- 1. Warning: electricity (ISO 7010 W012 style) -->
+  <g transform="translate(200 140)">
+    <path d="M0 -96 L104 82 L-104 82 Z" fill="#111111" stroke="#111111" stroke-width="20" stroke-linejoin="round"/>
+    <path d="M0 -72 L82 70 L-82 70 Z" fill="#f2b705" stroke="#f2b705" stroke-width="8" stroke-linejoin="round"/>
+    <path d="M12 -42 L-26 12 L-4 12 L-19 56 L-29 49 L-24 78 L4 60 L-7 56 L28 -2 L5 -2 L22 -42 Z" fill="#111111"/>
+  </g>
+
+  <!-- 2. Prohibition: no USB / probes while powered (ISO 7010 P0xx style) -->
+  <g transform="translate(600 140)">
+    <circle r="92" fill="#ffffff"/>
+    <!-- USB plug pictogram -->
+    <g fill="none" stroke="#111111" stroke-width="9" stroke-linejoin="round" stroke-linecap="round">
+      <rect x="-26" y="-58" width="52" height="40" rx="3"/>
+      <rect x="-14" y="-46" width="8" height="10" fill="#111111" stroke="none"/>
+      <rect x="6" y="-46" width="8" height="10" fill="#111111" stroke="none"/>
+      <rect x="-36" y="-18" width="72" height="56" rx="8" fill="#111111"/>
+      <path d="M0 38 V72"/>
+    </g>
+    <circle r="84" fill="none" stroke="#b71f2e" stroke-width="18"/>
+    <path d="M-59 -59 L59 59" stroke="#b71f2e" stroke-width="18"/>
+  </g>
+
+  <!-- 3. Mandatory: isolate at the breaker (ISO 7010 M0xx style) -->
+  <g transform="translate(1000 140)">
+    <circle r="92" fill="#005387"/>
+    <!-- breaker pictogram, lever down (off) -->
+    <g fill="none" stroke="#ffffff" stroke-width="9" stroke-linejoin="round" stroke-linecap="round">
+      <rect x="-34" y="-60" width="68" height="120" rx="8"/>
+      <rect x="-14" y="-6" width="28" height="44" rx="4" fill="#ffffff"/>
+    </g>
+    <text x="0" y="-22" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="30" font-weight="800" fill="#ffffff" text-anchor="middle">0</text>
+  </g>
+
+  <g font-family="Helvetica Neue, Helvetica, Arial, sans-serif" text-anchor="middle" fill="#13233a">
+    <text x="200" y="282" font-size="27" font-weight="800">LETHAL VOLTAGE</text>
+    <text x="200" y="314" font-size="19" fill="#566173">Not isolated: every node is live,</text>
+    <text x="200" y="340" font-size="19" fill="#566173">including the logic side.</text>
+
+    <text x="600" y="282" font-size="27" font-weight="800">NO USB, PROBES OR TOOLS</text>
+    <text x="600" y="314" font-size="19" fill="#566173">Never connect anything while</text>
+    <text x="600" y="340" font-size="19" fill="#566173">it is connected to mains.</text>
+
+    <text x="1000" y="282" font-size="27" font-weight="800">ISOLATE FIRST</text>
+    <text x="1000" y="314" font-size="19" fill="#566173">Switch off at the breaker and</text>
+    <text x="1000" y="340" font-size="19" fill="#566173">prove it dead before you touch it.</text>
+  </g>
+</svg>

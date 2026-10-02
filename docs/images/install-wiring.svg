@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 330" width="760" height="330" role="img" aria-label="Wiring before and after: the Reckoner sits between the wall buttons and the blind motor">
+  <title>Install wiring, before and after</title>
+  <style>
+    text { font-family: "IBM Plex Sans", system-ui, sans-serif; font-size: 13px; fill: #13233a; }
+    .label { font-size: 11px; font-weight: 500; letter-spacing: 0.04em; fill: #566173; }
+    .wire { stroke: #13233a; stroke-width: 2; fill: none; }
+    .live { stroke: #b03a26; stroke-width: 2; fill: none; }
+    .blk { fill: #fbf8f1; stroke: #566173; stroke-width: 1; }
+    .reck { fill: #fbf8f1; stroke: #a87a22; stroke-width: 2; }
+  </style>
+  <rect width="760" height="330" fill="#f4efe4"/>
+  <text class="label" x="20" y="28">BEFORE</text>
+  <text x="20" y="64">L</text><path class="live" d="M36 60 H90"/>
+  <rect class="blk" x="90" y="40" width="110" height="80" rx="6"/>
+  <text x="104" y="66">Up button</text><text x="104" y="98">Down button</text>
+  <path class="live" d="M200 62 H300"/><path class="live" d="M200 94 H300"/>
+  <text x="212" y="56" style="font-size:11px;fill:#566173">230 V up</text><text x="212" y="112" style="font-size:11px;fill:#566173">230 V down</text>
+  <rect class="blk" x="300" y="40" width="110" height="80" rx="6"/>
+  <text x="318" y="78">Blind motor</text><text x="318" y="98" style="font-size:11px;fill:#566173">~1 A, 230 VAC</text>
+  <path class="wire" d="M410 80 H450"/><text x="456" y="84">N</text>
+  <text class="label" x="20" y="178">AFTER</text>
+  <text x="20" y="214">L</text><path class="live" d="M36 210 H90"/>
+  <rect class="blk" x="90" y="190" width="110" height="80" rx="6"/>
+  <text x="104" y="216">Up button</text><text x="104" y="248">Down button</text>
+  <path class="live" d="M200 212 H300"/><path class="live" d="M200 244 H300"/>
+  <text x="212" y="206" style="font-size:11px;fill:#566173">S_UP input</text><text x="212" y="262" style="font-size:11px;fill:#566173">S_DN input</text>
+  <rect class="reck" x="300" y="180" width="170" height="110" rx="6"/>
+  <text x="314" y="204" style="font-weight:600">Reckoner</text>
+  <text x="314" y="226" style="font-size:12px">ESP32-C6, relays K1+K2,</text>
+  <text x="314" y="244" style="font-size:12px">motor-current sensing</text>
+  <text x="314" y="270" style="font-size:11px;fill:#566173">L and N in, 6 flying leads</text>
+  <path class="live" d="M470 212 H560"/><path class="live" d="M470 244 H560"/>
+  <text x="482" y="206" style="font-size:11px;fill:#566173">M_UP</text><text x="482" y="262" style="font-size:11px;fill:#566173">M_DN</text>
+  <rect class="blk" x="560" y="190" width="110" height="80" rx="6"/>
+  <text x="578" y="228">Blind motor</text>
+  <path class="wire" d="M670 230 H710"/><text x="716" y="234">N</text>
+  <text x="20" y="316" style="font-size:12px;fill:#566173">Every movement now goes through the Reckoner, so it always knows when the blind moved. All of this sits in one Italian 503 wall box.</text>
+</svg>
