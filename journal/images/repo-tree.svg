@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 300" width="560" height="300" role="img" aria-label="Repository layout after setup">
+  <title>Repository layout</title>
+  <style>
+    text { font-family: "IBM Plex Mono", ui-monospace, Menlo, monospace; font-size: 13px; fill: #13233a; }
+    .note { font-family: "IBM Plex Sans", system-ui, sans-serif; font-size: 12px; fill: #566173; }
+    .head { font-family: "IBM Plex Sans", system-ui, sans-serif; font-size: 11px; font-weight: 500; letter-spacing: 0.04em; fill: #566173; }
+  </style>
+  <rect width="560" height="300" fill="#f4efe4"/>
+  <rect x="16" y="16" width="528" height="268" rx="6" fill="#fbf8f1" stroke="#d6ccb8"/>
+  <text class="head" x="32" y="40">BLIND-RECKONING, BRANCH MASTER, LOCAL ONLY, SIGNED COMMITS</text>
+  <text x="32" y="70">blind-reckoning/</text>
+  <text x="32" y="92">├── CAD/</text><text class="note" x="250" y="92">enclosure and full-assembly STEP (later)</text>
+  <text x="32" y="114">├── PCB/</text><text class="note" x="250" y="114">KiCad project goes here</text>
+  <text x="32" y="136">├── Firmware/</text><text class="note" x="250" y="136">ESP32-C6 firmware (later)</text>
+  <text x="32" y="158">├── brand/</text><text class="note" x="250" y="158">brand book, tokens, logos</text>
+  <text x="32" y="180">├── CLAUDE.md</text><text class="note" x="250" y="180">project rules and decisions</text>
+  <text x="32" y="202">├── .gitignore</text><text class="note" x="250" y="202">KiCad backups, .kicad_prl, builds,</text>
+  <text class="note" x="250" y="220">secrets.yaml, .env, .DS_Store</text>
+  <text x="32" y="242">├── prompt.txt</text>
+  <text x="32" y="264">└── half-life-resources.txt</text>
+</svg>

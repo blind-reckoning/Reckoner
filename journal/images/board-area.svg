@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 300" width="720" height="300" role="img" aria-label="Board area: part courtyards total 1,673 mm squared, compared with candidate board sizes">
+  <title>Board area against candidate outlines</title>
+  <style>
+    text { font-family: "IBM Plex Sans", system-ui, sans-serif; font-size: 13px; fill: #13233a; }
+    .num { font-family: "IBM Plex Mono", ui-monospace, Menlo, monospace; font-size: 12px; fill: #13233a; }
+    .label { font-size: 11px; font-weight: 500; letter-spacing: 0.04em; fill: #566173; }
+  </style>
+  <rect width="720" height="300" fill="#f4efe4"/>
+  <text class="label" x="20" y="28">BOARD AREA (MM²), ONE SIDE; BAR LENGTH TO SCALE</text>
+  <!-- scale: 0.2 px per mm² from x=200 -->
+  <text x="20" y="72">30 × 30 mm</text><rect x="200" y="58" width="180" height="20" fill="#566173"/><text class="num" x="388" y="73">900  (ruled out)</text>
+  <text x="20" y="112">40 × 45 mm</text><rect x="200" y="98" width="360" height="20" fill="#566173"/><text class="num" x="568" y="113">1,800  (first target)</text>
+  <text x="20" y="152">60 × 40 mm</text><rect x="200" y="138" width="480" height="20" fill="#2d5b79"/><text class="num" x="560" y="153" style="fill:#fbf8f1">2,400 target</text>
+  <text x="20" y="192">65 × 45 mm</text><rect x="200" y="178" width="500" height="20" fill="#2d5b79" opacity="0.55"/><text class="num" x="606" y="193">2,925 max</text>
+  <text x="20" y="242">Part courtyards</text><rect x="200" y="228" width="334.6" height="20" fill="#a87a22"/><text class="num" x="542" y="243">1,673  (before routing and mains gaps)</text>
+  <line x1="200" y1="50" x2="200" y2="256" stroke="#13233a" stroke-width="1"/>
+  <text x="20" y="284" style="font-size:12px;fill:#566173">Figures from the BOM review: courtyards summed from the KiCad footprints, with the ESP32 antenna overhanging the edge.</text>
+</svg>

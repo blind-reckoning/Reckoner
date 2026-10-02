@@ -1,0 +1,18 @@
+Here are a couple of links detailing how the Half Life initiative expects to receive updates on this project.
+
+Guide on how to journal
+https://hwdocs.hackclub.dev/journaling/
+
+Sample journal entry:
+https://hwdocs.hackclub.dev/journaling/example-journal/
+
+Hackatime (wakatime fork) documentation:
+https://hackatime.hackclub.com/docs
+
+WAKATIME DOCS COVERING WHAT WE NEED:
+https://wakatime.com/blog/12-controlling-which-folders-get-logged
+
+Shipping docs:
+https://hwdocs.hackclub.dev/shipping/
+https://hwdocs.hackclub.dev/shipping/101/
+https://hwdocs.hackclub.dev/other/ordering/

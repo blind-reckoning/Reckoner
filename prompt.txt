@@ -1,0 +1,12 @@
+We're designing a smart blinds pcb. Its goal is to sit in between the dumb buttons and the motor and:
+    1. In offline mode receive the button press and raise all the way up or down the blind. Further button presses will result in halting the movement in the current state.
+    2. When used in conjunction with Homeassistant it should expose apis to be operated by automations and whatnot.
+Further features may Follow but the hardware should be designed around these considerations.
+This project is being developed as part of a "Hackclub" challenge named Half Life.
+The resources/requirements have been outlined in @half-life-resources.txt
+@/brand contains indications on the brandig systems. See the Readme inside that folder for more information.
+We will dedicate this first turn to assimilate the requrements outlined above and on getting familiar with the hackclub process 
+Half life uses Hackatime to track code hours. I here by authorize you to set it up IF AND ONLY IF you can restrict its access to this folder/repo only. Otherwise do not install and tell me why it's not possible.
+IDE is VScode for code and KiCAD for Hardware as of now but we may refine in later steps.
+
+If you have questions ask them at any time.

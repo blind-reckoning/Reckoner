@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 360" width="720" height="360" role="img" aria-label="Hackatime decision: the folder-only condition could not be met, so Hackatime was purged">
+  <title>Hackatime decision</title>
+  <style>
+    text { font-family: "IBM Plex Sans", system-ui, sans-serif; fill: #13233a; }
+    .label { font-size: 11px; font-weight: 500; letter-spacing: 0.04em; fill: #566173; }
+    .body { font-size: 13px; }
+    .mono { font-family: "IBM Plex Mono", ui-monospace, Menlo, monospace; font-size: 12px; }
+    .box { fill: #fbf8f1; stroke: #566173; stroke-width: 1; }
+    .no { fill: #fbf8f1; stroke: #b03a26; stroke-width: 2; }
+    .arrow { stroke: #13233a; stroke-width: 1.5; fill: none; marker-end: url(#a); }
+  </style>
+  <defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#13233a"/></marker></defs>
+  <rect width="720" height="360" fill="#f4efe4"/>
+  <rect class="box" x="20" y="20" width="210" height="80" rx="6"/>
+  <text class="label" x="34" y="42">MY CONDITION</text>
+  <text class="body" x="34" y="64">Install Hackatime only if it</text>
+  <text class="body" x="34" y="82">is limited to this folder</text>
+  <rect class="box" x="260" y="20" width="440" height="160" rx="6"/>
+  <text class="label" x="274" y="42">WHAT WE FOUND ON THE MAC</text>
+  <text class="body" x="274" y="66">• One global config (~/.wakatime.cfg) shared by every plugin</text>
+  <text class="body" x="274" y="88">• The VS Code plugin sees every workspace it loads in</text>
+  <text class="body" x="274" y="110">• kicad-wakatime is a separate app that reads window titles</text>
+  <text class="body" x="274" y="132">• An old offline queue: 1,412 unsent heartbeats, none from</text>
+  <text class="body" x="286" y="152">this project, almost all "ai coding" from other projects</text>
+  <text class="body" x="274" y="172">• Adding an API key would likely upload that queue</text>
+  <path class="arrow" d="M230 60 H255"/>
+  <rect class="no" x="20" y="210" width="210" height="80" rx="6"/>
+  <text class="label" x="34" y="232" style="fill:#b03a26">RESULT</text>
+  <text class="body" x="34" y="254">Condition cannot be met:</text>
+  <text class="body" x="34" y="272">only filtering, not access</text>
+  <path class="arrow" d="M480 180 V200 H125 V205"/>
+  <rect class="box" x="260" y="210" width="440" height="130" rx="6"/>
+  <text class="label" x="274" y="232">MY DECISION: PURGE IT FOR NOW</text>
+  <text class="mono" x="274" y="256">~/.wakatime/          (CLI, logs, offline queue)</text>
+  <text class="mono" x="274" y="276">~/.wakatime.cfg       ~/.bash_profile (hook only)</text>
+  <text class="mono" x="274" y="296">Android Studio WakaTime.jar (2 copies)</text>
+  <text class="mono" x="274" y="316">cached VS Code wakatime installer</text>
+  <path class="arrow" d="M230 250 H255"/>
+</svg>
