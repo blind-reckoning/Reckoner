@@ -10,6 +10,7 @@ fp-info-cache
 *.kicad_prl
 *.bak
 *-bak
+.history/
 
 # Firmware build output
 .pio/
@@ -19,3 +20,6 @@ build/
 # Secrets (Wi-Fi credentials, API keys)
 secrets.yaml
 .env
+
+# Markdown stays local (owner's decision). Add a !exception only for a file the repo truly needs.
+*.md
