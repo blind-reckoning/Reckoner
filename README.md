@@ -24,6 +24,8 @@
   <img alt="For Home Assistant" src="https://img.shields.io/badge/for-Home%20Assistant-18BCF2?style=for-the-badge&logo=homeassistant&logoColor=white">
   <img alt="Hack Club Half Life" src="https://img.shields.io/badge/Hack%20Club-Half%20Life-ec3750?style=for-the-badge&logo=hackclub&logoColor=white">
   <a href="https://kicanvas.org/?github=https%3A%2F%2Fgithub.com%2Fblind-reckoning%2FReckoner%2Fblob%2Fmaster%2FPCB%2Freckoner.kicad_sch"><img alt="View the schematic in KiCanvas" src="https://img.shields.io/badge/view%20schematic-KiCanvas-13233a?style=for-the-badge"></a>
+  <a href="LICENSE"><img alt="Hardware licence: CERN-OHL-S-2.0" src="https://img.shields.io/badge/hardware-CERN--OHL--S--2.0-a87a22?style=for-the-badge"></a>
+  <a href="LICENSE-DOCS"><img alt="Documentation licence: CC BY-SA 4.0" src="https://img.shields.io/badge/docs-CC%20BY--SA%204.0-a87a22?style=for-the-badge"></a>
 </p>
 
 <p align="center">
@@ -173,7 +175,51 @@ Firmware/       firmware (to come)
 brand/          logos, colours and fonts
 docs/images/    images used in this README
 bom.csv         bill of materials with LCSC part numbers, ready for JLCPCB assembly
+LICENSE         hardware licence: CERN-OHL-S-2.0
+LICENSE-DOCS    documentation licence: CC BY-SA 4.0
 ```
+
+## Licence
+
+Blind Reckoning is open hardware. You may study, build, modify, share and sell it under these terms:
+
+| What | Licence | Full text |
+|---|---|---|
+| **Hardware:** everything in `PCB/` and `CAD/`, and `bom.csv` | CERN Open Hardware Licence version 2, strongly reciprocal (**CERN-OHL-S-2.0**) | [`LICENSE`](LICENSE) |
+| **Documentation:** this README and everything in `docs/` | Creative Commons Attribution-ShareAlike 4.0 International (**CC BY-SA 4.0**) | [`LICENSE-DOCS`](LICENSE-DOCS) |
+| **Firmware** | Not written yet; its licence will be chosen when it is. | |
+
+**These licences apply retroactively.** They cover every version of this repository, including all commits made before the licence files were added on 2 October 2026. Any copy of the hardware or documentation you obtained from this repository, from any commit, is licensed under the terms above as if the licence files had been there from the first commit.
+
+**Strongly reciprocal** means that if you share a modified Reckoner design, or make and sell boards based on one, you must publish your modified design under the same licence. For a mains device, this keeps every change, including the safety-relevant ones, open to review.
+
+Hardware notice:
+
+```
+Copyright 2026 KOZELJ Michele
+
+This source describes Open Hardware and is licensed under the CERN-OHL-S v2.
+
+You may redistribute and modify this source and make products using it under
+the terms of the CERN-OHL-S v2 (https://ohwr.org/cern_ohl_s_v2.txt).
+
+This source is distributed WITHOUT ANY EXPRESS OR IMPLIED WARRANTY, INCLUDING
+OF MERCHANTABILITY, SATISFACTORY QUALITY AND FITNESS FOR A PARTICULAR PURPOSE.
+Please see the CERN-OHL-S v2 for applicable conditions.
+
+Source location: https://github.com/blind-reckoning/Reckoner
+
+As per CERN-OHL-S v2 section 4, should You produce hardware based on this
+source, You must where practicable maintain the Source Location visible on
+the circuit board or enclosure of the Reckoner or other products you make
+using this source.
+```
+
+Not covered by these licences:
+
+- **The Blind Reckoning name and logos** (`brand/logos/`, `brand/symbols/`) are not licensed for reuse. Modified or cloned hardware must use its own name and mark. You may say it is "for Blind Reckoning" or "compatible with Blind Reckoning" (see the [brand book](brand/README.md)).
+- **The fonts** in `brand/fonts/` (IBM Plex Sans, IBM Plex Mono, Young Serif) belong to their authors and are distributed under the SIL Open Font License 1.1. Their licence files are next to them.
+- **KiCad library symbols and footprints** used in the design are under KiCad's library licence (CC BY-SA 4.0 with an exception for designs that use them), so they don't change the licence of the Reckoner design.
 
 ## Built for
 
