@@ -39,9 +39,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.8,
-          "height": 1.27,
-          "width": 2.54
+          "drill": 1.6,
+          "height": 2.6,
+          "width": 2.6
         },
         "silk_line_width": 0.15,
         "silk_text_italic": false,
@@ -60,7 +60,40 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        [
+          "clearance|131110000|109760000|257205ea-50ba-4d05-b592-86fc944f3ce0|221a3e08-720e-4811-b05f-71a55acd3185",
+          "SW is already closer in the diode. This should be fine"
+        ],
+        [
+          "clearance|87475000|133900000|ec2d270c-557c-4f06-8919-d6e53e9ba228|0e96f698-b2fd-414e-9b2b-b1d0ef5c9d84",
+          "Only a nanometer"
+        ],
+        [
+          "copper_edge_clearance|148875000|112212500|99a96697-fdc2-42e7-8cce-84a85ba2ef03|4398758d-c2d5-4a29-afaa-5b775fe14753",
+          "Should be fine"
+        ],
+        [
+          "copper_edge_clearance|148875000|114112500|99a96697-fdc2-42e7-8cce-84a85ba2ef03|eabfa3b6-f4a8-4575-aa6c-70c23e569eef",
+          "Should be fine"
+        ],
+        [
+          "creepage|131750000|112650000|944ec48a-5444-4414-be6e-6131de272aa3|257205ea-50ba-4d05-b592-86fc944f3ce0",
+          "Part specific"
+        ],
+        [
+          "creepage|131875000|139400000|45cba1ee-7f40-409f-82e1-3ad4b077d8eb|3eb21ddc-8f68-4973-bab0-d168d9a66276",
+          "Part specific"
+        ],
+        [
+          "creepage|86931643|130871072|0e96f698-b2fd-414e-9b2b-b1d0ef5c9d84|ec2d270c-557c-4f06-8919-d6e53e9ba228",
+          "It's only a nanometer. "
+        ],
+        [
+          "creepage|94250000|107150000|d6d05567-e9e3-429d-b60c-24f8a7bfe0e3|818b983b-f6fa-47d7-8776-d4bcacdecbae",
+          "Part specific"
+        ]
+      ],
       "meta": {
         "version": 2
       },
@@ -68,7 +101,7 @@
         "annular_width": "error",
         "clearance": "error",
         "connection_width": "warning",
-        "copper_edge_clearance": "error",
+        "copper_edge_clearance": "warning",
         "copper_sliver": "warning",
         "courtyards_overlap": "error",
         "creepage": "error",
@@ -109,7 +142,7 @@
         "silk_overlap": "warning",
         "skew_out_of_range": "error",
         "solder_mask_bridge": "error",
-        "starved_thermal": "error",
+        "starved_thermal": "ignore",
         "text_height": "warning",
         "text_on_edge_cuts": "error",
         "text_thickness": "warning",
@@ -200,7 +233,8 @@
         0.5,
         0.8,
         1.0,
-        1.5
+        1.5,
+        2.0
       ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {

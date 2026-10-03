@@ -1,0 +1,34 @@
+(version 1)
+
+(rule "N side to low-voltage side, 3 mm"
+  (constraint clearance (min 3mm))
+  (constraint creepage (min 3mm))
+  (condition "(A.hasNetclass('Mains_N') && !B.hasNetclass('Mains_N') && !B.hasNetclass('HV_DC') && !B.hasNetclass('Motor')) || (B.hasNetclass('Mains_N') && !A.hasNetclass('Mains_N') && !A.hasNetclass('HV_DC') && !A.hasNetclass('Motor'))"))
+
+(rule "HV bus to low-voltage side, 3 mm"
+  (constraint clearance (min 3mm))
+  (constraint creepage (min 3mm))
+  (condition "(A.hasNetclass('HV_DC') && !B.hasNetclass('Mains_N') && !B.hasNetclass('HV_DC') && !B.hasNetclass('Motor')) || (B.hasNetclass('HV_DC') && !A.hasNetclass('Mains_N') && !A.hasNetclass('HV_DC') && !A.hasNetclass('Motor'))"))
+
+(rule "N side to HV bus, 4 mm"
+  (constraint clearance (min 4mm))
+  (constraint creepage (min 4mm))
+  (condition "(A.hasNetclass('Mains_N') && B.hasNetclass('HV_DC')) || (A.hasNetclass('HV_DC') && B.hasNetclass('Mains_N'))"))
+
+(rule "Motor wires to everything, 5 mm"
+  (constraint clearance (min 5mm))
+  (constraint creepage (min 5mm))
+  (condition "A.hasNetclass('Motor') || B.hasNetclass('Motor')"))
+
+(rule "Mains nets keep 2 mm from the board edge"
+  (constraint edge_clearance (min 2mm))
+  (condition "A.hasNetclass('Mains_N') || A.hasNetclass('HV_DC') || A.hasNetclass('Motor')"))
+
+(rule "U3 pads at antenna edge, 0.3 mm (JLCPCB allows 0.2 mm)"
+  (constraint edge_clearance (min 0.3mm))
+  (condition "A.memberOfFootprint('U3')"))
+
+(rule "Package-rated gaps inside these parts"
+  (constraint clearance (min 0.2mm))
+  (constraint creepage (min 0.2mm))
+  (condition "(A.intersectsCourtyard('D1') && B.intersectsCourtyard('D1')) || (A.intersectsCourtyard('D2') && B.intersectsCourtyard('D2')) || (A.intersectsCourtyard('D3') && B.intersectsCourtyard('D3')) || (A.intersectsCourtyard('C1') && B.intersectsCourtyard('C1')) || (A.intersectsCourtyard('R14') && B.intersectsCourtyard('R14')) || (A.intersectsCourtyard('R17') && B.intersectsCourtyard('R17')) || (A.intersectsCourtyard('R19') && B.intersectsCourtyard('R19')) || (A.intersectsCourtyard('R23') && B.intersectsCourtyard('R23'))"))

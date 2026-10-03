@@ -4,6 +4,10 @@
 	(generator_version "10.0")
 	(uuid "a4d88e87-23e2-4ab8-853d-15d5cb8e46f0")
 	(paper "A3")
+	(title_block
+		(title "Reckoner")
+		(company "KOZELJ Michele")
+	)
 	(lib_symbols
 		(symbol "Connector:TestPoint"
 			(pin_numbers
@@ -20500,32 +20504,6 @@
 			)
 		)
 	)
-	(symbol_instances
-		(path "/a4d88e87-23e2-4ab8-853d-15d5cb8e46f0/9b38a59f-1916-4da2-bbd8-d49cd447b223"
-			(reference "C2")
-			(unit 1)
-			(value "3.9uF 400V")
-			(footprint "Capacitor_SMD:CP_Elec_8x10")
-		)
-		(path "/a4d88e87-23e2-4ab8-853d-15d5cb8e46f0/ff7819d0-4648-4566-9bc7-334491019cea"
-			(reference "F1")
-			(unit 1)
-			(value "2A 250VAC 0443002.DR")
-			(footprint "EasyEDA:FUSE-SMD_L10.1-W3.1")
-		)
-		(path "/a4d88e87-23e2-4ab8-853d-15d5cb8e46f0/152ad465-2165-4621-9081-1c0d35cffb24"
-			(reference "RV1")
-			(unit 1)
-			(value "S07K275")
-			(footprint "EasyEDA:RES-TH_L9.0-W4.6-P5.00-D0.6-S1.60")
-		)
-		(path "/a4d88e87-23e2-4ab8-853d-15d5cb8e46f0/0ee01271-869c-4a67-a81b-cb33e7fd130f"
-			(reference "L2")
-			(unit 1)
-			(value "680uH")
-			(footprint "EasyEDA:IND-TH_BD9.5-P5.20-D0.6")
-		)
-)
 	(sheet_instances
 		(path "/"
 			(page "1")
