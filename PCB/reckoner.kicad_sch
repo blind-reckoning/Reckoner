@@ -8407,7 +8407,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Inductor_THT:L_Radial_D8.7mm_P5.00mm_Fastron_07HCP"
+		(property "Footprint" "EasyEDA:IND-TH_BD9.5-P5.20-D0.6"
 			(at 215.9 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -8668,7 +8668,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Varistor:RV_Disc_D7mm_W5.5mm_P5mm"
+		(property "Footprint" "EasyEDA:RES-TH_L9.0-W4.6-P5.00-D0.6-S1.60"
 			(at 64.77 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -20365,7 +20365,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Fuse:Fuse_Littelfuse-NANO2-462"
+		(property "Footprint" "EasyEDA:FUSE-SMD_L10.1-W3.1"
 			(at 40.64 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -20506,6 +20506,24 @@
 			(unit 1)
 			(value "3.9uF 400V")
 			(footprint "Capacitor_SMD:CP_Elec_8x10")
+		)
+		(path "/a4d88e87-23e2-4ab8-853d-15d5cb8e46f0/ff7819d0-4648-4566-9bc7-334491019cea"
+			(reference "F1")
+			(unit 1)
+			(value "2A 250VAC 0443002.DR")
+			(footprint "EasyEDA:FUSE-SMD_L10.1-W3.1")
+		)
+		(path "/a4d88e87-23e2-4ab8-853d-15d5cb8e46f0/152ad465-2165-4621-9081-1c0d35cffb24"
+			(reference "RV1")
+			(unit 1)
+			(value "S07K275")
+			(footprint "EasyEDA:RES-TH_L9.0-W4.6-P5.00-D0.6-S1.60")
+		)
+		(path "/a4d88e87-23e2-4ab8-853d-15d5cb8e46f0/0ee01271-869c-4a67-a81b-cb33e7fd130f"
+			(reference "L2")
+			(unit 1)
+			(value "680uH")
+			(footprint "EasyEDA:IND-TH_BD9.5-P5.20-D0.6")
 		)
 )
 	(sheet_instances

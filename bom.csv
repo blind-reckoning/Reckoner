@@ -1,6 +1,6 @@
 Comment,Designator,Footprint,LCSC Part #,Quantity,Unit Price (USD),Total (USD),JLCPCB Library,Assembly,Rating,Purpose,Link
-"Littelfuse 0443002.DR, 2 A Slo-Blo",F1,Fuse_Littelfuse-NANO2-462,C187538,1,0.7999,0.7999,Extended,SMT,"250 VAC, 50 A breaking",Mains entry,https://www.lcsc.com/product-detail/C187538.html
-TDK B72207S2271K101 (S07K275),RV1,RV_Disc_D7mm_W5.5mm_P5mm,C1527389,1,0.0808,0.0808,Extended,THT,"275 VAC, 430 V, 1.75 kA",Mains entry,https://www.lcsc.com/product-detail/C1527389.html
+"Littelfuse 0443002.DR, 2 A Slo-Blo",F1,FUSE-SMD_L10.1-W3.1,C187538,1,0.7999,0.7999,Extended,SMT,"250 VAC, 50 A breaking",Mains entry,https://www.lcsc.com/product-detail/C187538.html
+TDK B72207S2271K101 (S07K275),RV1,RES-TH_L9.0-W4.6-P5.00-D0.6-S1.60,C1527389,1,0.0808,0.0808,Extended,THT,"275 VAC, 430 V, 1.75 kA",Mains entry,https://www.lcsc.com/product-detail/C1527389.html
 FR1WS 10 Ω fusible,R1,R_Axial_DIN0309_L9.0mm_D3.2mm_P2.54mm_Vertical,C145951,1,0.0374,0.0374,Extended,THT,"1 W, 250 V",Power supply,https://www.lcsc.com/product-detail/C145951.html
 M7,D1,D_SMA,C95872,1,0.0102,0.0102,Basic,SMT,"1000 V, 1 A, IFSM 30 A",Power supply,https://www.lcsc.com/product-detail/C95872.html
 "2.2 µF, RYUD400V2.2UF6*10",C1,CP_Elec_6.3x9.9,C48970947,1,0.0800,0.0800,Extended,SMT,"400 V, 105 °C, 6000 h, 13 mA at 120 Hz",Power supply,https://www.lcsc.com/product-detail/C48970947.html
@@ -9,7 +9,7 @@ M7,D1,D_SMA,C95872,1,0.0102,0.0102,Basic,SMT,"1000 V, 1 A, IFSM 30 A",Power supp
 LNK3206D-TL,U1,PowerIntegrations_SO-8C,C2987730,1,1.0762,1.0762,Extended,SMT,"725 V drain, ILIMIT 450–650 mA (standard)",Power supply,https://www.lcsc.com/product-detail/C2987730.html
 100 nF X7R,C3,C_0603_1608Metric,C14663,1,0.0123,0.0123,Basic,SMT,50 V,Power supply,https://www.lcsc.com/product-detail/C14663.html
 ES1J-LTP,"D2,D3",D_SMA,C86560,2,0.0218,0.0436,Extended,SMT,"600 V, 1 A, trr 35 ns",Power supply,https://www.lcsc.com/product-detail/C86560.html
-"680 µH, PDPTAT0810-681K",L2,L_Radial_D8.7mm_P5.00mm_Fastron_07HCP,C2924238,1,0.1179,0.1179,Extended,THT,"Irms 350 mA, Isat 800 mA, 0.91 Ω",Power supply,https://www.lcsc.com/product-detail/C2924238.html
+"680 µH, PDPTAT0810-681K",L2,IND-TH_BD9.5-P5.20-D0.6,C2924238,1,0.1179,0.1179,Extended,THT,"Irms 350 mA, Isat 800 mA, 0.91 Ω",Power supply,https://www.lcsc.com/product-detail/C2924238.html
 22 µF X5R,"C4,C9",C_0805_2012Metric,C45783,2,0.2202,0.4404,Basic,SMT,25 V,Power supply; MCU,https://www.lcsc.com/product-detail/C45783.html
 3.3 kΩ 1 %,R2,R_0402_1005Metric,C25890,1,0.0035,0.0035,Basic,SMT,62.5 mW,Power supply,https://www.lcsc.com/product-detail/C25890.html
 2.2 kΩ 1 %,R3,R_0402_1005Metric,C25879,1,0.0013,0.0013,Basic,SMT,62.5 mW,Power supply,https://www.lcsc.com/product-detail/C25879.html
