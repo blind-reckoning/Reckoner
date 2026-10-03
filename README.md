@@ -63,7 +63,7 @@ Every movement now goes through the Reckoner, so the blind can't move without it
 | Block | Main parts | What it does |
 |---|---|---|
 | Mains input | 2 A slow-blow fuse, 275 VAC varistor | Protects the board and the wall wiring; circuit ground is mains L after the fuse |
-| Off-line 5 V supply | LNK3206D high-side buck | Makes 5 V straight from the mains, with no transformer, about 360 ms of hold-up |
+| Off-line 5 V supply | LNK3206D high-side buck | Makes 5 V straight from the mains, with no transformer, and keeps running for at least 100 ms after a power cut |
 | 3.3 V regulator | AP2112K-3.3 | Clean 3.3 V for the radio and the metering chip |
 | Microcontroller | ESP32-C6-MINI-1 | Wi-Fi 6, Bluetooth LE and Thread; runs the dead-reckoning logic |
 | Metering | HLW8110, 10 mΩ shunt | Measures motor current (to detect the ends) and mains voltage |

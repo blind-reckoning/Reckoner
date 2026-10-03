@@ -15122,7 +15122,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "2.2uF 400V"
+		(property "Value" "3.9uF 400V"
 			(at 135.89 68.9609 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15133,7 +15133,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:CP_Elec_6.3x9.9"
+		(property "Footprint" "Capacitor_SMD:CP_Elec_8x10"
 			(at 144.78 71.12 0)
 			(hide yes)
 			(show_name no)
@@ -15165,7 +15165,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C48970947"
+		(property "LCSC" "C33129636"
 			(at 144.78 71.12 0)
 			(hide yes)
 			(show_name no)
@@ -20500,6 +20500,14 @@
 			)
 		)
 	)
+	(symbol_instances
+		(path "/a4d88e87-23e2-4ab8-853d-15d5cb8e46f0/9b38a59f-1916-4da2-bbd8-d49cd447b223"
+			(reference "C2")
+			(unit 1)
+			(value "3.9uF 400V")
+			(footprint "Capacitor_SMD:CP_Elec_8x10")
+		)
+)
 	(sheet_instances
 		(path "/"
 			(page "1")

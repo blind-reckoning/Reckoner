@@ -3,7 +3,8 @@ Comment,Designator,Footprint,LCSC Part #,Quantity,Unit Price (USD),Total (USD),J
 TDK B72207S2271K101 (S07K275),RV1,RV_Disc_D7mm_W5.5mm_P5mm,C1527389,1,0.0808,0.0808,Extended,THT,"275 VAC, 430 V, 1.75 kA",Mains entry,https://www.lcsc.com/product-detail/C1527389.html
 FR1WS 10 Ω fusible,R1,R_Axial_DIN0309_L9.0mm_D3.2mm_P2.54mm_Vertical,C145951,1,0.0374,0.0374,Extended,THT,"1 W, 250 V",Power supply,https://www.lcsc.com/product-detail/C145951.html
 M7,D1,D_SMA,C95872,1,0.0102,0.0102,Basic,SMT,"1000 V, 1 A, IFSM 30 A",Power supply,https://www.lcsc.com/product-detail/C95872.html
-"2.2 µF, RYUD400V2.2UF6*10","C1,C2",CP_Elec_6.3x9.9,C48970947,2,0.0800,0.1600,Extended,SMT,"400 V, 105 °C, 6000 h",Power supply,https://www.lcsc.com/product-detail/C48970947.html
+"2.2 µF, RYUD400V2.2UF6*10",C1,CP_Elec_6.3x9.9,C48970947,1,0.0800,0.0800,Extended,SMT,"400 V, 105 °C, 6000 h, 13 mA at 120 Hz",Power supply,https://www.lcsc.com/product-detail/C48970947.html
+"3.9 µF, FOLLON EFVD400ADA3R9M08B0",C2,CP_Elec_8x10,C33129636,1,0.1376,0.1376,Extended,SMT,"400 V, 105 °C, 5000 h, 64 mA at 120 Hz",Power supply,https://www.lcsc.com/product-detail/C33129636.html
 "1 mH, XRNR5040-1mH/M",L1,L_Taiyo-Yuden_NR-50xx,C5339706,1,0.0648,0.0648,Extended,SMT,"250 mA, 6.2 Ω",Power supply,https://www.lcsc.com/product-detail/C5339706.html
 LNK3206D-TL,U1,PowerIntegrations_SO-8C,C2987730,1,1.0762,1.0762,Extended,SMT,"725 V drain, ILIMIT 450–650 mA (standard)",Power supply,https://www.lcsc.com/product-detail/C2987730.html
 100 nF X7R,C3,C_0603_1608Metric,C14663,1,0.0123,0.0123,Basic,SMT,50 V,Power supply,https://www.lcsc.com/product-detail/C14663.html
