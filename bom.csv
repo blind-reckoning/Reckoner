@@ -37,5 +37,3 @@ HLW8110,U4,SOIC-8_3.9x4.9mm_P1.27mm,C970139,1,0.6877,0.6877,Extended,SMT,"3.0–
 10 nF X7R,"C17,C18",C_0402_1005Metric,C15195,2,0.0050,0.0100,Basic,SMT,50 V,Inputs,https://www.lcsc.com/product-detail/C15195.html
 BAT54S,"D7,D8,D9",SOT-23,C8592,3,0.0231,0.0693,Extended,SMT,"30 V, 200 mA",Inputs,https://www.lcsc.com/product-detail/C8592.html
 100 pF C0G,C19,C_0402_1005Metric,C1546,1,0.0042,0.0042,Basic,SMT,50 V,Inputs,https://www.lcsc.com/product-detail/C1546.html
-"H05V-K 0.75 mm² stranded wire, ~10 cm per lead (colour per function)","J1,J2,J3,J4,J5,J6",SolderWire-0.75sqmm_1x01_D1.25mm_OD2.3mm,,6,,,,Hand (flying leads),450/750 V,Flying leads to house wiring,
-"PCB, 2-layer FR-4 1.6 mm, 1 oz, ~60 × 40 mm",,,,1,,,,JLCPCB fab,,Bare board (price at order),https://jlcpcb.com
