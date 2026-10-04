@@ -16,6 +16,7 @@
   <img alt="For Home Assistant" src="https://img.shields.io/badge/for-Home%20Assistant-18BCF2?style=for-the-badge&logo=homeassistant&logoColor=white">
   <img alt="Hack Club Half Life" src="https://img.shields.io/badge/Hack%20Club-Half%20Life-ec3750?style=for-the-badge&logo=hackclub&logoColor=white">
   <a href="https://kicanvas.org/?github=https%3A%2F%2Fgithub.com%2Fblind-reckoning%2FReckoner%2Fblob%2Fmaster%2FPCB%2Freckoner.kicad_sch"><img alt="View the schematic in KiCanvas" src="https://img.shields.io/badge/view%20schematic-KiCanvas-13233a?style=for-the-badge"></a>
+  <a href="https://kicanvas.org/?github=https%3A%2F%2Fgithub.com%2Fblind-reckoning%2FReckoner%2Fblob%2Fmaster%2FPCB%2Freckoner.kicad_pcb"><img alt="View the board in KiCanvas" src="https://img.shields.io/badge/view%20board-KiCanvas-13233a?style=for-the-badge"></a>
   <a href="LICENSE"><img alt="Hardware licence: CERN-OHL-S-2.0" src="https://img.shields.io/badge/hardware%20 licence-CERN--OHL--S--2.0-a87a22?style=for-the-badge"></a>
 </p>
 
@@ -37,7 +38,7 @@ Motorised blinds with press-and-hold buttons have no idea where they are. The Re
 - **Always knows where the blind is.** There is no position sensor. It works the position out by **dead reckoning**, the way navigators did before GPS: from a known starting point, the calibrated time for a full stroke and the time elapsed.
 - **Takes a fix at every end.** When the blind reaches fully open or fully closed, the motor's own limit switch cuts its current. The Reckoner sees that drop and takes a **fix** (position confirmed), which clears any **drift** (timing error built up since the last fix).
 - **Keeps its position through power cuts.** It notices mains loss within one cycle and saves the position on the energy left in its capacitors.
-- **Fits behind the switches.** The target is a 60 × 40 mm board inside an Italian 503 wall box.
+- **Fits behind the switches.** The board is 70 × 54.5 mm, sized for an Italian 503 wall box.
 
 Positions are whole percent: 0% is closed and 100% is open, matching Home Assistant.
 
@@ -75,6 +76,15 @@ K1 is the only relay that switches the motor on and off. K2 only chooses the dir
 | on | on | up |
 
 The firmware sets K2 first and then closes K1, and opens K1 before releasing K2, so K2 never switches under load. Both relay drivers are held off by hardware through reset, boot, crashes and flashing.
+
+### The board
+
+<p align="center">
+  <img alt="The routed Reckoner, top side" src="docs/images/board-top.png" width="49%">
+  <img alt="The Reckoner, back side: mains warnings, licence and a QR code to this repository" src="docs/images/board-back.png" width="49%">
+</p>
+
+The board is 70 × 54.5 mm on two layers, placed and routed by hand. Custom design rules keep the mains nodes 3 to 5 mm apart, and 5 mm around the motor wires. The back carries the mains warnings, the licence and a QR code to this repository. The Gerbers, drill and placement files for JLCPCB are in [`PCB/production/`](PCB/production/).
 
 ## Safety
 
@@ -127,35 +137,42 @@ The firmware sets K2 first and then closes K1, and opens K1 before releasing K2,
 | Have a hardware interlock: up and down can never both be live | Clear a direct short by itself: that is the house breaker's job |
 | Have relays that default to off through reset, boot, crashes and flashing | Make "off" safe: the board is live while L and N are connected |
 | Have button inputs that tolerate a common wired to N (at most 1.6 mA flows, and the firmware can flag it) | Replace an enclosure, an RCD or a qualified installer |
-| Have a planned layout with at least 3 mm creepage between mains nodes, and 5 mm or a slot between the motor wires | Carry any certification: no CE marking, no UL listing, no lab testing |
+| Have a layout that keeps mains nodes 3 to 5 mm apart, and 5 mm around the motor wires, except between a part's own pins | Carry any certification: no CE marking, no UL listing, no lab testing |
 
 ### Disclaimer
 
 > [!IMPORTANT]
-> Blind Reckoning is a hobby prototype, built for Hack Club Half Life. It is **not a certified product** and has **not been tested by any laboratory**. Everything in this repository is provided as is, without warranty of any kind.
+> Blind Reckoning is a hobby prototype I built for Hack Club Half Life. It is **not a certified product** and has **not been tested by any laboratory**. Everything in this repository is provided as is, without warranty of any kind.
 >
 > **If you build, flash, test or install a Reckoner, you do so entirely at your own risk.** The authors accept no responsibility for injury, death, fire or damage to property caused by using anything in this repository.
+>
+> The **Blind Reckoning** "brand" is just a game. Please don not take it too seriously ;)
 
 ## Project status
 
 | Stage | State |
 |---|---|
 | Requirements and architecture | done |
-| Parts list (`bom.csv`, JLCPCB/LCSC parts) | done |
+| Parts list (`BOM/bom.csv`, JLCPCB/LCSC parts) | done |
 | Schematic: 86 parts, 51 nets, 0 ERC errors | done |
-| PCB layout | next |
+| PCB layout: 70 × 54.5 mm, two layers | done |
+| Production files for JLCPCB (`PCB/production/`) | done |
+| Order costed: 5 PCBs, a stencil and parts for one board (`bom.csv`) | done |
+| Ordering boards and parts | next |
 | Enclosure | not started |
 | Firmware | not started |
 
 ## Repository
 
 ```
-PCB/            KiCad 10 project: schematic and the custom HLW8110 symbol
+PCB/            KiCad 10 project: schematic, board, custom symbols and footprints
+PCB/production/ Gerbers, drill and placement files for JLCPCB
 CAD/            enclosure and 3D assembly (to come)
 Firmware/       firmware (to come)
 brand/          logos, colours and fonts
 docs/images/    images used in this README
-bom.csv         bill of materials with LCSC part numbers, ready for JLCPCB assembly
+BOM/            bill of materials (bom.csv, ready for JLCPCB assembly), ordering lists and supplier quotes
+bom.csv         order cost: PCBs, stencil, parts, shipping and taxes
 LICENSE         hardware licence: CERN-OHL-S-2.0
 LICENSE-DOCS    documentation licence: CC BY-SA 4.0
 ```
@@ -166,7 +183,7 @@ Blind Reckoning is open hardware. You may study, build, modify, share and sell i
 
 | What | Licence | Full text |
 |---|---|---|
-| **Hardware:** everything in `PCB/` and `CAD/`, and `bom.csv` | CERN Open Hardware Licence version 2, strongly reciprocal (**CERN-OHL-S-2.0**) | [`LICENSE`](LICENSE) |
+| **Hardware:** everything in `PCB/` and `CAD/`, and `BOM/bom.csv` | CERN Open Hardware Licence version 2, strongly reciprocal (**CERN-OHL-S-2.0**) | [`LICENSE`](LICENSE) |
 | **Documentation:** this README and everything in `docs/` | Creative Commons Attribution-ShareAlike 4.0 International (**CC BY-SA 4.0**) | [`LICENSE-DOCS`](LICENSE-DOCS) |
 | **Firmware** | Not written yet; its licence will be chosen when it is. | |
 

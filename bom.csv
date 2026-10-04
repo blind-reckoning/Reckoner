@@ -1,39 +1,8 @@
-Comment,Designator,Footprint,LCSC Part #,Quantity,Supplier,Supplier Part #,Unit Price (USD),Total (USD),JLCPCB Library,Assembly,Rating,Purpose,Link
-"Littelfuse 0443002.DR, 2 A Slo-Blo",F1,FUSE-SMD_L10.1-W3.1,C187538,1,LCSC,C187538,0.7999,0.7999,Extended,SMT,"250 VAC, 50 A breaking",Mains entry,https://www.lcsc.com/product-detail/C187538.html
-TDK B72207S2271K101 (S07K275),RV1,RES-TH_L9.0-W4.6-P5.00-D0.6-S1.60,C1527389,1,LCSC,C1527389,0.0808,0.0808,Extended,THT,"275 VAC, 430 V, 1.75 kA",Mains entry,https://www.lcsc.com/product-detail/C1527389.html
-FR1WS 10 Ω fusible,R1,R_Axial_DIN0309_L9.0mm_D3.2mm_P2.54mm_Vertical,C145951,1,LCSC,C145951,0.0374,0.0374,Extended,THT,"1 W, 250 V",Power supply,https://www.lcsc.com/product-detail/C145951.html
-M7,D1,D_SMA,C95872,1,LCSC,C95872,0.0102,0.0102,Basic,SMT,"1000 V, 1 A, IFSM 30 A",Power supply,https://www.lcsc.com/product-detail/C95872.html
-"2.2 µF, RYUD400V2.2UF6*10",C1,CP_Elec_6.3x9.9,C48970947,1,LCSC,C48970947,0.0800,0.0800,Extended,SMT,"400 V, 105 °C, 6000 h, 13 mA at 120 Hz",Power supply,https://www.lcsc.com/product-detail/C48970947.html
-"3.9 µF, FOLLON EFVD400ADA3R9M08B0",C2,CP_Elec_8x10,C33129636,1,LCSC,C33129636,0.1376,0.1376,Extended,SMT,"400 V, 105 °C, 5000 h, 64 mA at 120 Hz",Power supply,https://www.lcsc.com/product-detail/C33129636.html
-"1 mH, XRNR5040-1mH/M",L1,L_Taiyo-Yuden_NR-50xx,C5339706,1,LCSC,C5339706,0.0648,0.0648,Extended,SMT,"250 mA, 6.2 Ω",Power supply,https://www.lcsc.com/product-detail/C5339706.html
-LNK3206D-TL,U1,PowerIntegrations_SO-8C,C2987730,1,LCSC,C2987730,1.0762,1.0762,Extended,SMT,"725 V drain, ILIMIT 450–650 mA (standard)",Power supply,https://www.lcsc.com/product-detail/C2987730.html
-100 nF X7R,C3,C_0603_1608Metric,C14663,1,LCSC,C14663,0.0123,0.0123,Basic,SMT,50 V,Power supply,https://www.lcsc.com/product-detail/C14663.html
-ES1J-LTP,"D2,D3",D_SMA,C86560,2,LCSC,C86560,0.0218,0.0436,Extended,SMT,"600 V, 1 A, trr 35 ns",Power supply,https://www.lcsc.com/product-detail/C86560.html
-"680 µH, PDPTAT0810-681K",L2,IND-TH_BD9.5-P5.20-D0.6,C2924238,1,LCSC,C2924238,0.1179,0.1179,Extended,THT,"Irms 350 mA, Isat 800 mA, 0.91 Ω",Power supply,https://www.lcsc.com/product-detail/C2924238.html
-22 µF X5R,"C4,C9",C_0805_2012Metric,C45783,2,LCSC,C45783,0.2202,0.4404,Basic,SMT,25 V,Power supply; MCU,https://www.lcsc.com/product-detail/C45783.html
-3.3 kΩ 1 %,R2,R_0402_1005Metric,C25890,1,LCSC,C25890,0.0035,0.0035,Basic,SMT,62.5 mW,Power supply,https://www.lcsc.com/product-detail/C25890.html
-2.2 kΩ 1 %,R3,R_0402_1005Metric,C25879,1,LCSC,C25879,0.0013,0.0013,Basic,SMT,62.5 mW,Power supply,https://www.lcsc.com/product-detail/C25879.html
-22 µF X5R,"C5,C6",C_1206_3216Metric,C12891,2,LCSC,C12891,0.1733,0.3466,Basic,SMT,25 V,Power supply,https://www.lcsc.com/product-detail/C12891.html
-"470 µF, BXJ10V470UF8*10",C7,CP_Elec_8x10,C2693598,1,LCSC,C2693598,0.2346,0.2346,Extended,SMT,"10 V, 105 °C, 5000 h, 160 mΩ",Power supply,https://www.lcsc.com/product-detail/C2693598.html
-1.5 kΩ 1 %,R4,R_0603_1608Metric,C22843,1,LCSC,C22843,0.0020,0.0020,Basic,SMT,100 mW,Power supply,https://www.lcsc.com/product-detail/C22843.html
-AP2112K-3.3TRG1,U2,SOT-23-5,C51118,1,LCSC,C51118,0.1710,0.1710,Extended,SMT,"600 mA, 6 V max in",3.3 V LDO,https://www.lcsc.com/product-detail/C51118.html
-1 µF X5R,"C8,C11",C_0402_1005Metric,C52923,2,LCSC,C52923,0.0099,0.0198,Basic,SMT,25 V,3.3 V LDO; MCU,https://www.lcsc.com/product-detail/C52923.html
-100 nF X7R,"C10,C12,C13,C14,C15,C16",C_0402_1005Metric,C1525,6,LCSC,C1525,0.0045,0.0270,Basic,SMT,16 V,MCU; Metering,https://www.lcsc.com/product-detail/C1525.html
-ESP32-C6-MINI-1-N4,U3,ESP32-C6-MINI-1,C5736265,1,Digi-Key,1965-ESP32-C6-MINI-1-N4CT-ND,4.5300,4.5300,Extended,SMT,"3.0–3.6 V, 354 mA TX peak",MCU,https://www.digikey.com/en/products/detail/espressif-systems/ESP32-C6-MINI-1-N4/17885796
-10 kΩ 1 %,"R5,R6,R25,R26,R27",R_0402_1005Metric,C25744,5,LCSC,C25744,0.0034,0.0170,Basic,SMT,62.5 mW,MCU; Inputs,https://www.lcsc.com/product-detail/C25744.html
-KT-0603R red,D4,LED_0603_1608Metric,C2286,1,LCSC,C2286,0.0076,0.0076,Basic,SMT,20 mA max,MCU,https://www.lcsc.com/product-detail/C2286.html
-1 kΩ 1 %,R7,R_0603_1608Metric,C21190,1,LCSC,C21190,0.0026,0.0026,Basic,SMT,100 mW,MCU,https://www.lcsc.com/product-detail/C21190.html
-Hongfa HF46F-G/5-HS1,K1,Relay_SPST_Omron_G5NB,C165255,1,LCSC,C165255,1.1852,1.1852,Extended,THT,"5 V coil 200 mW (125 Ω), 10 A 250 VAC",Motor switching,https://www.lcsc.com/product-detail/C165255.html
-Omron G5Q-14 DC5,K2,Relay_SPDT_Omron-G5Q-1,C397241,1,LCSC,C397241,1.1396,1.1396,Extended,THT,"5 V coil 400 mW, SPDT 3 A 250 VAC (NO and NC); 1000 VAC across open contacts",Motor switching,https://www.lcsc.com/product-detail/C397241.html
-AO3400A,"Q1,Q2",SOT-23,C20917,2,LCSC,C20917,0.0888,0.1776,Basic,SMT,"30 V, 5.7 A, 48 mΩ @ 2.5 V",Motor switching,https://www.lcsc.com/product-detail/C20917.html
-100 kΩ 1 %,"R8,R9",R_0402_1005Metric,C25741,2,LCSC,C25741,0.0024,0.0048,Basic,SMT,62.5 mW,Motor switching,https://www.lcsc.com/product-detail/C25741.html
-1N4148W,"D5,D6",D_SOD-123,C81598,2,LCSC,C81598,0.0123,0.0246,Basic,SMT,"75 V, 150 mA",Motor switching,https://www.lcsc.com/product-detail/C81598.html
-"10 mΩ 1 %, FMF06FTHR010-LH",R10,R_1206_3216Metric,C105362,1,LCSC,C105362,0.0410,0.0410,Extended,SMT,1 W,Metering,https://www.lcsc.com/product-detail/C105362.html
-HLW8110,U4,SOIC-8_3.9x4.9mm_P1.27mm,C970139,1,LCSC,C970139,0.6877,0.6877,Extended,SMT,"3.0–3.6 V, ±800 mV/PGA inputs",Metering,https://www.lcsc.com/product-detail/C970139.html
-1 kΩ 1 %,"R11,R12,R15",R_0402_1005Metric,C11702,3,Digi-Key,311-1.00KLRCT-ND,0.1000,0.3000,Basic,SMT,62.5 mW,Metering,https://www.digikey.com/en/products/result?keywords=311-1.00KLRCT-ND
-1 MΩ 1 %,"R13,R14,R22,R23",R_1206_3216Metric,C17927,4,LCSC,C17927,0.0041,0.0164,Basic,SMT,"250 mW, 200 V",Metering; Inputs,https://www.lcsc.com/product-detail/C17927.html
-100 kΩ 1 %,"R16,R17,R18,R19",R_1206_3216Metric,C17900,4,LCSC,C17900,0.0102,0.0408,Basic,SMT,"250 mW, 200 V",Inputs,https://www.lcsc.com/product-detail/C17900.html
-1 MΩ 1 %,"R20,R21,R24",R_0402_1005Metric,C26083,3,LCSC,C26083,0.0026,0.0078,Basic,SMT,62.5 mW,Inputs,https://www.lcsc.com/product-detail/C26083.html
-10 nF X7R,"C17,C18",C_0402_1005Metric,C15195,2,LCSC,C15195,0.0050,0.0100,Basic,SMT,50 V,Inputs,https://www.lcsc.com/product-detail/C15195.html
-BAT54S,"D7,D8,D9",SOT-23,C8592,3,LCSC,C8592,0.0231,0.0693,Extended,SMT,"30 V, 200 mA",Inputs,https://www.lcsc.com/product-detail/C8592.html
-100 pF C0G,C19,C_0402_1005Metric,C1546,1,LCSC,C1546,0.0042,0.0042,Basic,SMT,50 V,Inputs,https://www.lcsc.com/product-detail/C1546.html
+Item,Quantity,Supplier,Price (USD),Note
+Bill of materials (reference only),1,N/A,0.00,The per-part BOM is BOM/bom.csv. Orders: BOM/bom-lcsc.csv (LCSC) and BOM/bom-digikey.csv (Digi-Key). Quote screenshots are in BOM/.
+"PCB: 2 layers, 70 × 54.5 mm, 1.6 mm, green, lead-free HASL",1,JLCPCB,6.25,5 units included
+"SMT stencil, top side, with frame",1,JLCPCB,16.75,
+LCSC parts,1,LCSC,29.24,Order quantities include LCSC minimum orders.
+DigiKey parts,1,Digi-Key,4.77,
+Shipping and taxes,,All,89.74,"JLCPCB $24.28 (shipping $34.28 - $10.00 coupon). LCSC $30.17 (shipping $12.88 + tax $20.34 - $3.05 of discounts). Digi-Key $35.29 (€25.00 shipping + €6.44 VAT)."
+Total,,,146.75,"Items $57.01, shipping and taxes $89.74."
