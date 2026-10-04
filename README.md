@@ -11,26 +11,15 @@
 </p>
 
 <p align="center">
-  <img alt="Danger: 230 VAC mains" src="https://img.shields.io/badge/DANGER-230%20VAC%20MAINS-b03a26?style=for-the-badge">
-  <img alt="Not isolated: every node is live" src="https://img.shields.io/badge/NOT%20ISOLATED-every%20node%20is%20live-b03a26?style=for-the-badge">
-  <img alt="Qualified electricians only" src="https://img.shields.io/badge/INSTALL-qualified%20electricians%20only-f2b705?style=for-the-badge&labelColor=111111">
-  <img alt="Not certified: prototype" src="https://img.shields.io/badge/CERTIFICATION-none%2C%20prototype-555555?style=for-the-badge">
-</p>
-
-<p align="center">
-  <img alt="Status: schematic done, PCB next" src="https://img.shields.io/badge/status-schematic%20done%2C%20PCB%20next-2d5b79?style=for-the-badge">
-  <img alt="KiCad 10" src="https://img.shields.io/badge/KiCad-10-314CB0?style=for-the-badge&logo=kicad&logoColor=white">
+  <img alt="KiCad 10" href="https://www.kicad.org/" src="https://img.shields.io/badge/KiCad-10-314CB0?style=for-the-badge&logo=kicad&logoColor=white">
   <img alt="ESP32-C6" src="https://img.shields.io/badge/ESP32--C6-Wi--Fi%206%20%7C%20BLE%20%7C%20Thread-E7352C?style=for-the-badge&logo=espressif&logoColor=white">
   <img alt="For Home Assistant" src="https://img.shields.io/badge/for-Home%20Assistant-18BCF2?style=for-the-badge&logo=homeassistant&logoColor=white">
   <img alt="Hack Club Half Life" src="https://img.shields.io/badge/Hack%20Club-Half%20Life-ec3750?style=for-the-badge&logo=hackclub&logoColor=white">
   <a href="https://kicanvas.org/?github=https%3A%2F%2Fgithub.com%2Fblind-reckoning%2FReckoner%2Fblob%2Fmaster%2FPCB%2Freckoner.kicad_sch"><img alt="View the schematic in KiCanvas" src="https://img.shields.io/badge/view%20schematic-KiCanvas-13233a?style=for-the-badge"></a>
-  <a href="LICENSE"><img alt="Hardware licence: CERN-OHL-S-2.0" src="https://img.shields.io/badge/hardware-CERN--OHL--S--2.0-a87a22?style=for-the-badge"></a>
-  <a href="LICENSE-DOCS"><img alt="Documentation licence: CC BY-SA 4.0" src="https://img.shields.io/badge/docs-CC%20BY--SA%204.0-a87a22?style=for-the-badge"></a>
+  <a href="LICENSE"><img alt="Hardware licence: CERN-OHL-S-2.0" src="https://img.shields.io/badge/hardware%20 licence-CERN--OHL--S--2.0-a87a22?style=for-the-badge"></a>
 </p>
 
-<p align="center">
-  <img alt="Danger: 230 VAC mains, not isolated. Every part of this board is live when it is powered, including the ESP32, the LED and the test pads. Contact can kill." src="docs/images/danger-mains.svg" width="100%">
-</p>
+
 
 > [!CAUTION]
 > **This project switches 230 VAC mains, and its electronics are not isolated from the mains.** There is no transformer: every part of the board, including the microcontroller, the LED and the programming pads, sits at mains voltage whenever it is connected.
@@ -53,10 +42,6 @@ Motorised blinds with press-and-hold buttons have no idea where they are. The Re
 Positions are whole percent: 0% is closed and 100% is open, matching Home Assistant.
 
 ## How it works
-
-<p align="center">
-  <img alt="Wiring before and after: the Reckoner sits between the wall buttons and the blind motor" src="docs/images/install-wiring.svg" width="100%">
-</p>
 
 Every movement now goes through the Reckoner, so the blind can't move without it knowing.
 
@@ -92,10 +77,6 @@ K1 is the only relay that switches the motor on and off. K2 only chooses the dir
 The firmware sets K2 first and then closes K1, and opens K1 before releasing K2, so K2 never switches under load. Both relay drivers are held off by hardware through reset, boot, crashes and flashing.
 
 ## Safety
-
-<p align="center">
-  <img alt="Lethal voltage: every node is live. No USB, probes or tools while it is connected to mains. Isolate at the breaker and prove it dead before you touch it." src="docs/images/safety-signs.svg" width="100%">
-</p>
 
 ### Why this board is more dangerous than most
 
