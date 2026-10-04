@@ -1,0 +1,3 @@
+Digi-Key Part Number,Manufacturer Part Number,Manufacturer Name,Quantity,Reference Designator,Description,LCSC Part #,Note
+1965-ESP32-C6-MINI-1-N4CT-ND,ESP32-C6-MINI-1-N4,Espressif Systems,1,U3,"Wi-Fi 6, Bluetooth LE and 802.15.4 module, 4 MB flash",C5736265,Same part; backordered at LCSC.
+311-1.00KLRCT-ND,RC0402FR-071KL,YAGEO,3,"R11,R12,R15","Resistor 1 kΩ 1 %, 0402",C11702,"Same spec as the UNI-ROYAL part, which is backordered at LCSC."
